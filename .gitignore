@@ -1,5 +1,19 @@
-Plaintext
-.venv/
+# Секрети та середовище
 .env
+.venv/
+venv/
+
+# Системні файли IDE та ОС
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Кеш Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Тимчасові та чернеткові файли
+Plaintext.txt
+*.log
