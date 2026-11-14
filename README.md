@@ -1,5 +1,7 @@
 # 📈 Enterprise Trading Data Pipeline & Medallion Architecture
 
+[![Trading Pipeline CI](https://github.com/VladShmyhelskyi/Trading_data_pipeline/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/VladShmyhelskyi/Trading_data_pipeline/actions/workflows/ci.yml)
+
 A production-grade, end-to-end Data Engineering pipeline designed to ingest, transform, and aggregate financial market data using a **Medallion Architecture (Bronze/Silver/Gold)**, integrating local Big Data processing with **Apache Spark (PySpark)** and cloud data warehousing via **Snowflake**.
 
 ---
