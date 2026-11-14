@@ -1,0 +1,26 @@
+Trading_data_pipeline/
+│
+├── .venv/                      # Ваше віртуальне середовище Python
+│
+├── sql/                        # SQL-скрипти для ініціалізації та трансформацій у Snowflake
+│   ├── 00_basic_db.sql         # Створення бази даних, схем та хмарного кластера
+│   ├── 01_init_db.sql          # Ініціалізація та налаштування таблиць шару Bronze
+│   ├── 02_silver_transform.sql # SQL-запит для очищення та перетворення у шар Silver
+│   └── 03_gold_transform.sql   # [МАЙБУТНЄ] SQL-скрипт для фінальної вітрини Gold
+│
+├── src/                        # Основний вихідний код Python-пайплайну
+│   ├── __init__.py             # Ініціалізатор пакету
+│   ├── ingest_bronze.py        # Скрипт збору ринкових даних (API) та завантаження в Bronze
+│   ├── transform_silver.py     # Автоматизація Silver-трансформації через Snowflake Connector
+│   └── spark_processor.py      # [МАЙБУТНЄ] Розподілена обробка даних за допомогою Apache Spark
+│
+├── tests/                      # [МАЙБУТНЄ] Модульні тестування коду
+│   └── test_pipeline.py        # Юніт-тести (pytest) для перевірки логіки та з'єднань
+│
+├── .github/
+│   └── workflows/              # [МАЙБУТНЄ] Автоматизація Continuous Integration (CI)
+│       └── ci.yml              # GitHub Actions для лінтингу та автоматичного запуску тестів
+│
+├── requirements.txt            # Список залежностей (pandas, requests, snowflake-connector-python, yfinance)
+├── test_snowflake.py           # Тестовий скрипт перевірки зв'язку з хмарою
+└── README.md                   # Головна документація проєкту для вашого GitHub-портфоліо
