@@ -8,9 +8,9 @@ A production-grade, end-to-end Data Engineering pipeline designed to ingest, tra
 
 ## 🌟 Key Features
 
-* **Функція 1.** Автоматизоване завантаження та стажування сирих ринкових даних у режимі реального часу (`Bronze Layer`) за допомогою `yfinance`.
-* **Функція 2.** Швидка та надійна розподілена очищення, дедуплікація й трансформація даних через Apache Spark (`Silver Layer`) з розрахунком додаткових показників.
-* **Функція 3.** Підтримка експорту оброблених даних у локальні формати (`Parquet`, `CSV`) та інтеграція з хмарним сховищем Snowflake (`Gold Layer`).
+- **Automated Data Ingestion (Bronze Layer):** Automated extraction and staging of raw financial market data in real time using `yfinance`.
+- **Distributed Data Processing (Silver Layer):** Fast and reliable distributed data cleaning, deduplication, and transformation powered by Apache Spark (PySpark), including derived financial metrics calculation.
+- **Multi-Format Export & Cloud Warehousing (Gold Layer):** Support for exporting processed datasets to local columnar and tabular formats (`Parquet`, `CSV`) alongside seamless integration with Snowflake Cloud Data Warehouse.
 
 ---
 
