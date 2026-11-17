@@ -66,3 +66,15 @@ Trading_data_pipeline/
 ├── requirements.txt             # Project dependencies
 └── README.md                    # Project documentation
 ```
+
+## 📊 Business Intelligence & Visualization (Power BI)
+
+The Gold analytical layer (`processed_market_data.csv`) is visualized in **Microsoft Power BI Desktop** (`powerbi/eurusd_dashboard.pbix`) to provide an executive overview of `EURUSD=X` price action and daily volatility.
+
+![Power BI Market Dashboard](assets/powerbi_dashboard.png)
+
+### Key Dashboard Features:
+- **Executive KPI Header:** Tracks `Latest Close`, `Period High`, `Period Low`, `Avg Close`, and `Period Return %` using custom **DAX** time-intelligence measures (`FIRSTDATE`, `LASTDATE`, `CALCULATE`, `DIVIDE`).
+- **Price Trend Dynamics:** Interactive area chart illustrating closing price movements across the reporting period with a calibrated Y-axis scale.
+- **Volatility Analysis:** Clustered column chart of `price_change` enhanced with rule-based conditional formatting (green for positive daily gains, red for pullbacks).
+- **Granular OHLC Inspection:** Formatted data table displaying chronological daily quotes (`open`, `high`, `low`, `close`, `price_change`) to 4-decimal precision without distorted column totals.
